@@ -1,0 +1,12 @@
+CREATE TABLE product (
+  id SERIAL PRIMARY KEY,
+  branch TEXT NOT NULL,
+  description TEXT NOT NULL,
+  price DECIMAL(10,2) NOT NULL
+);
+
+INSERT INTO product (branch, description, price) VALUES
+('Omo', 'Detergente de lavanderia', 2000),
+('Triton', 'Galletas de chocolate con vainilla', 1000),
+('MoM', 'Crema de belleza', 5000),
+('Corona', 'Cerveza Corona', 3000);
